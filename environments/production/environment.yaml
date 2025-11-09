@@ -7,7 +7,12 @@ app:
   # scenario. If the value is set to an empty string ("") the application
   # is not deployed.
   version: "718cd34e-9e8d-46df-b93c-6824b13e9813"
-  
+
+  services:
+    - amazonCloudWatch:
+        arn: arn:aws:iam::592157396942:role/IBM_EASeJ_Service_20251014-0723-2300-40bd-d5ad7c120a52
+        logGroup: EASeJ
+        
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   #maven:
